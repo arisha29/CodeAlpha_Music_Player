@@ -2,7 +2,7 @@ console.log("Welcome to Spotify");
 
 // Initialize the Variables
 let songIndex = 0;
-let audioElement = new Audio('songs/1.mp3');
+let audioElement = new Audio('assets/songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
@@ -10,16 +10,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    { songName: "Warriyo - Mortals [NCS Release]", filePath: "songs/1.mp3", coverPath: "covers/1.jpg" },
-    { songName: "Cielo - Huma-Huma", filePath: "songs/2.mp3", coverPath: "covers/2.jpg" },
-    { songName: "DEAF KEV - Invincible [NCS Release]-320k", filePath: "songs/3.mp3", coverPath: "covers/3.jpg" },
-    { songName: "Different Heaven & EH!DE - My Heart [NCS Release]", filePath: "songs/4.mp3", coverPath: "covers/4.jpg" },
-    { songName: "Janji-Heroes-Tonight-feat-Johnning-NCS-Release", filePath: "songs/5.mp3", coverPath: "covers/5.jpg" },
-    { songName: "Rabba - Salam-e-Ishq", filePath: "songs/2.mp3", coverPath: "covers/6.jpg" },
-    { songName: "Sakhiyaan - Salam-e-Ishq", filePath: "songs/2.mp3", coverPath: "covers/7.jpg" },
-    { songName: "Bhula Dena - Salam-e-Ishq", filePath: "songs/2.mp3", coverPath: "covers/8.jpg" },
-    { songName: "Tumhari Kasam - Salam-e-Ishq", filePath: "songs/2.mp3", coverPath: "covers/9.jpg" },
-    { songName: "Na Jaana - Salam-e-Ishq", filePath: "songs/4.mp3", coverPath: "covers/10.jpg" },
+    { songName: "*NSYNC - Bye Bye Bye (Deadpool 3 Soundtrack)", filePath: "assets/songs/1.mp3", coverPath: "assets/images/cover1.jpg" },
+    { songName: "Taylor Swift - Down Bad", filePath: "assets/songs/2.mp3", coverPath: "assets/images/cover2.jpg" },
+    { songName: "Taylor Swift - Fortnight feat. Post Malone", filePath: "assets/songs/3.mp3", coverPath: "assets/images/cover3.jpg" },
+    { songName: "Day 29/50 | Friend", filePath: "assets/songs/4.mp3", coverPath: "assets/images/cover4.jpg" },
+    { songName: "Alan Walker - Faded", filePath: "assets/songs/5.mp3", coverPath: "assets/images/cover5.jpg" },
+    { songName: "Lil Tjay - Calling My Phone ft. 6LACK", filePath: "assets/songs/6.mp3", coverPath: "assets/images/cover6.jpg" },
+    { songName: "One Direction - Night Changes", filePath: "assets/songs/7.mp3", coverPath: "assets/images/cover7.jpg" },
+    { songName: "The Script - Hall Of Fame", filePath: "assets/songs/8.mp3", coverPath: "assets/images/cover8.jpg" },
+    { songName: "Trevor Daniel - Falling", filePath: "assets/songs/9.mp3", coverPath: "assets/images/cover9.jpg" },
+    { songName: "Justin Bieber - Baby ft. Ludacris", filePath: "assets/songs/10.mp3", coverPath: "assets/images/cover10.jpg" },
 ]
 
 songItems.forEach((element, i) => {
