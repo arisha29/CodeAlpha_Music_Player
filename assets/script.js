@@ -1,5 +1,3 @@
-console.log("Welcome to Spotify");
-
 // Initialize the Variables
 let songIndex = 0;
 let audioElement = new Audio('assets/songs/1.mp3');
@@ -67,7 +65,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element) =>
         songIndex = parseInt(e.target.id);
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
-        audioElement.src = `songs/${songIndex + 1}.mp3`;
+        audioElement.src = `assets/songs/${songIndex + 1}.mp3`;
         masterSongName.innerText = songs[songIndex].songName;
         audioElement.currentTime = 0;
         audioElement.play();
